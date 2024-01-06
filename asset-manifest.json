@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Porfolio/static/css/main.4ebb1b37.css",
+    "main.js": "/Porfolio/static/js/main.db05154d.js",
+    "static/js/787.7da95b79.chunk.js": "/Porfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/cloud1.png": "/Porfolio/static/media/cloud1.8762bda1e0cae8bf20cb.png",
+    "static/media/vn2.png": "/Porfolio/static/media/vn2.b846bf6d891b5572b851.png",
+    "static/media/vn1.png": "/Porfolio/static/media/vn1.f4c1c010e9e291dd483c.png",
+    "static/media/vn3.png": "/Porfolio/static/media/vn3.53928d48e393023a5ea8.png",
+    "static/media/hifive4.png": "/Porfolio/static/media/hifive4.b6bfb5f85ca6ad70fb78.png",
+    "static/media/hifive2.png": "/Porfolio/static/media/hifive2.68dbae94d8d1c08760d9.png",
+    "static/media/hifive1.png": "/Porfolio/static/media/hifive1.6be67e30fb5dd0b2b339.png",
+    "static/media/cancer1.png": "/Porfolio/static/media/cancer1.c2d0204f6b9a1437b620.png",
+    "static/media/cancer2.png": "/Porfolio/static/media/cancer2.63d5ea7e5cb6a71dc4e7.png",
+    "static/media/cancer3.png": "/Porfolio/static/media/cancer3.6c041bd868238257dc13.png",
+    "static/media/cloud2.png": "/Porfolio/static/media/cloud2.a16947e46cf17b0d79c2.png",
+    "static/media/thi.jpg": "/Porfolio/static/media/thi.1b2bb7f60f892795e7ac.jpg",
+    "static/media/hifive3.png": "/Porfolio/static/media/hifive3.342d415ef57826f219a9.png",
+    "static/media/love.gif": "/Porfolio/static/media/love.cba8ff0a23b34ae3a413.gif",
+    "static/media/em.png": "/Porfolio/static/media/em.c63ad3be632be09c94be.png",
+    "static/media/cv.jpg": "/Porfolio/static/media/cv.d340a8d42b8756ad7b90.jpg",
+    "index.html": "/Porfolio/index.html",
+    "main.4ebb1b37.css.map": "/Porfolio/static/css/main.4ebb1b37.css.map",
+    "main.db05154d.js.map": "/Porfolio/static/js/main.db05154d.js.map",
+    "787.7da95b79.chunk.js.map": "/Porfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ebb1b37.css",
+    "static/js/main.db05154d.js"
+  ]
+}
