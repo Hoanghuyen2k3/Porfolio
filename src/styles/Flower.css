@@ -1,0 +1,18 @@
+.flower {
+  font-size: 2em;
+  margin: 50px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.flowing {
+  animation: flowInWind 2s ease-in-out infinite alternate;
+}
+
+@keyframes flowInWind {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px); 
+  }
+}
