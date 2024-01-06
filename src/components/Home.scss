@@ -7,11 +7,42 @@
     // color: aqua;
     width: 90vw;
     max-width: 800px;
-    margin: 20px auto;
-    background-color: antiquewhite;
+    margin: 100px auto;
+    // background-color: antiquewhite;
 }
+.nav {
+  display: flex;
+  position: fixed;
+  width: 95%;
+  z-index: 100;
+  top: 0px;
+  background-color: #827397;
+  font-weight: 700;
+  justify-content: space-between;
+  align-items: end;
+}
+.nav-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    margin: 20px 20px;
+    text-decoration: none;
+    // background-color: aliceblue;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: black;
+  }
+  a:hover {
+    background-color: rgb(167, 139, 206);
+  }
+}
+.nav-to {
+  display: flex;
+}
+
 .intro-h1 {
-    font-size: clamp(30px, 4vw, 55px);
+    font-size: clamp(26px, 4vw, 50px);
     font-family: 'Rubik Doodle Shadow', system-ui;
     display: flex;
     // justify-content: center;
@@ -28,7 +59,7 @@
     min-height: 25px;
     max-height: 48px;
     background-color: bisque;
-    margin: 10px;
+    margin: 60px 0;
     border-radius: 30%;
   }
   
@@ -73,6 +104,10 @@
         align-items: center;
         border-radius: 5px;
         padding: 10px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .m:hover {
+      background-color: rgb(49, 47, 47);
     }
   }

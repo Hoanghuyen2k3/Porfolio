@@ -33,7 +33,7 @@ function About() {
       return (
         <div >
           <FadeInSection>
-            <div className="about">
+            <div id="about" className="about">
               <div className="section-header ">
                 <div className="about-content">
                   <span className="section-title">/ about me <div className="dash"></div></span>
@@ -57,8 +57,8 @@ function About() {
               <div className="about-image">
                 <img className="about-image" alt="Thi Huyen Hoang" src={thi} />
               </div>
+              
             </div>
-            
           </FadeInSection>
         </div>
       );

@@ -5,8 +5,9 @@
 }
 .about-image {
     width: 40vw;
-    max-width: 400px;
-    margin-top: 40px;
+    max-width: 280px;
+    margin-top: 90px;
+    border-radius: 5px;
     // height: 400px;
 }
 .section-header {
@@ -19,6 +20,7 @@
     // justify-content: baseline;
     // justify-content: center;
     align-items: baseline;
+    margin-top: 70px;
     .dash {
         background-color: black;
         width: 40vw;

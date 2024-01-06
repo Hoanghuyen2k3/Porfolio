@@ -11,14 +11,20 @@ import cloud2 from "../gif/cloud2.png"
 import vn1 from "../gif/vn1.png"
 import vn2 from "../gif/vn2.png"
 import vn3 from "../gif/vn3.png"
-
+import git from "../gif/git.png"
+import up from "../gif/up.png"
+import "./Project.scss"
+import { FaLocationArrow } from "react-icons/fa";
+import VideoPlayer from './VideoPlayer';
+import VideoPlayer1 from './VideoPlayer1';
+import FadeInSection from './FadeInSection';
 const projects ={
     HiFive : {
         tech: "ReactJS, Redux, CSS, HTML, and SCSS",
         github:"https://github.com/Hoanghuyen2k3/hifive",
         web:"https://hoanghuyen2k3.github.io/hifive/",
         img: [hifive1, hifive2, hifive3, hifive4],
-        description: "HiFive is a collection of five engaging games. Each game is designed to provide a fun and challenging experience for users. The project includes the following games:",
+        description: "HiFive is a collection of five engaging games. Each game is designed to provide a fun and challenging experience for users.",
         more: ["Designed 5 interactive games to provide a fun and challenging experience for users",
         "Implemented the classic Tic Tac Toe game and achieved unbeatable computer player through the Minimax algorithm",
         "Utilized TensorFlow models (hand pose and finger pose) and Webcam to detect real-time the user's choice of rock, paper, or scissors",
@@ -76,32 +82,84 @@ function Project() {
     const [pro, setPro]= useState("HiFive");
     const [imgP, setImgP] = useState(0);
     useEffect(() => {
+      // console.log(pro==="HiFive" ?"h":"null")
         const intervalId = setInterval(() => {
-          imgP > 0 ? setImgP(imgP - 1) : setImgP(projects[pro].img.length - 1);
+          // Your interval logic
+          if (pro !== "Memoritoo"){
+            if (imgP > 0 ) {
+                setImgP(imgP - 1);
+              } else {
+                setImgP(projects[pro].img.length - 1);
+              }
+          }
+          
         }, 2000);
       
+        // Clean up the interval when the component unmounts or when the dependencies change
         return () => clearInterval(intervalId);
       }, [imgP, pro]);
       
+      
   return (
-    <div>
-        <div>
-            <button onClick={(event)=>setPro(event.target.value)} value="HiFive">HiFive</button>
-            <button onClick={(event)=>setPro(event.target.value)} value="Cancer">Cancer Predictor ML</button>
-            <button onClick={(event)=>setPro(event.target.value)} value="Cloud">Cloud based smart monitoring systems</button>
-            <button onClick={(event)=>setPro(event.target.value)} value="Memoritoo">Memoritoo </button>
-            <button onClick={(event)=>setPro(event.target.value)} value="VNhub">VNhub </button>
+    <div id="proj" className="pro">
+        <FadeInSection>
+
+        <span className="section">/ projects <div className="dash"></div></span>
+        <div className="projects">
+            <div className="buttons">
+                <button className={pro==="HiFive" ?"h":""} onClick={(event)=>setPro(event.target.value)} value="HiFive">HiFive</button>
+                <button className={pro==="Cancer" ?"h":""} onClick={(event)=>setPro(event.target.value)} value="Cancer">Cancer Predictor ML</button>
+                <button className={pro==="Cloud" ?"h":""} onClick={(event)=>setPro(event.target.value)} value="Cloud">Cloud based smart monitoring systems</button>
+                <button className={pro==="Memoritoo" ?"h":""} onClick={(event)=>setPro(event.target.value)} value="Memoritoo">Memoritoo </button>
+                <button className={pro==="VNhub" ?"h":""} onClick={(event)=>setPro(event.target.value)} value="VNhub">VNhub </button>
+            </div>
+
+            <div className="discriptions">
+            <FadeInSection>
+              <div className="project-link">
+                <a href={projects[pro].github} target="_blank"  rel="noopener noreferrer"><img className="git" src={git} alt="github" /></a>
+                <a href={projects[pro].web} target="_blank"  rel="noopener noreferrer"><img className="git" src={up} alt="website" /></a>
+              </div>
+                
+                <p><b>Tech stacks:</b> {projects[pro].tech}</p>
+                <p>{projects[pro].description}</p>
+                <ul>
+                      {projects[pro].more.map( (p, i) => {
+                        return (
+                          <FadeInSection delay={`${i + 1}00ms`}>
+                            <li><FaLocationArrow className="icon" /> {p}</li>
+                          </FadeInSection>
+                        );
+                      })}
+                    </ul>
+
+                {/* <ul>{projects[pro].more.map((p, index)=><li key={index}>{p}</li>)}</ul> */}
+            </FadeInSection >
+
+            </div>
+            <div className="img-div">
+                {/* <div onClick={()=> imgP > 0 ? setImgP(imgP-1): setImgP(projects[pro].img.length -1 )}>-</div> */}
+                {/* <div onClick={()=> imgP < projects[pro].img.length -1 ? setImgP(imgP+1): setImgP(0) }>+</div> */}
+               {
+                pro ==="Memoritoo" ? <div className="video-container">
+                                            <div className="video">
+                                            <VideoPlayer />
+                                            </div>
+                                     </div>:
+                                     (pro==="Cloud"?
+                                     <div className="video-container">
+                                            <div className="video">
+                                            <VideoPlayer1 />
+                                            </div>
+                                            <img className="img-projects" src={projects[pro].img[imgP]} alt="project" />
+                                     </div>:<img className="img-projects" src={projects[pro].img[imgP]} alt="project" />
+                                     )}
+            </div>
         </div>
-        <div>
-            <p>{projects[pro].tech}</p>
-            <p>{projects[pro].description}</p>
-            <ul>{projects[pro].more.map((p, index)=><li key={index}>{p}</li>)}</ul>
-        </div>
-        {/* <div>
-            <div onClick={()=> imgP > 0 ? setImgP(imgP-1): setImgP(projects[pro].img.length -1 )}>-</div>
-            <div onClick={()=> imgP < projects[pro].img.length -1 ? setImgP(imgP+1): setImgP(0) }>+</div>
-            <img src={projects[pro].img[imgP]} alt="project" />
-        </div> */}
+
+        </FadeInSection>
+        
+        
     </div>
   )
 }

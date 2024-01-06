@@ -3,7 +3,10 @@ import FadeInSection from "./FadeInSection";
 import love from "../gif/love.gif"
 import "./Home.scss";
 import { MdEmail } from "react-icons/md";
-
+import linkedin from "../gif/linkedin.png"
+import git from "../gif/git.png"
+import em from "../gif/em.png"
+import cv from "../gif/cv.jpg"
 function Home() {
     const [text, setText] = useState(0);
     const phrase = "👋hi there, I'm THI HUYEN";
@@ -20,8 +23,23 @@ function Home() {
       }, [text]);
 
     return (
-        <div className="intro">
-        
+        <div id="home" className="intro">
+            <div className="nav">
+                <div className="nav-link">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#proj">Projects</a>
+                </div>
+                
+                <div className="nav-to">
+                    <a href="https://github.com/Hoanghuyen2k3" target="_blank"rel="noopener noreferrer"><img className="git" src={git} alt="github" /></a>
+                    <a href="https://www.linkedin.com/in/thi-huyen-hoang-ab434019b/" target="_blank"rel="noopener noreferrer"><img className="git" src={linkedin} alt="linkedin" /></a>
+                    <a href="https://drive.google.com/file/d/1mbExN1exXITOsOrzPrUQ4ObqUQrOKQL9/view?usp=sharing" target="_blank"rel="noopener noreferrer"><img className="git" src={cv} alt="email" /></a>
+
+                    <a href="mailto:khanhhuyenx20@gmail.com" target="_blank"rel="noopener noreferrer"><img className="git" src={em} alt="email" /></a>
+                </div>
+                
+            </div>
             <h1 className="intro-h1">{phrase.slice(0, text+1)} <div className="blinking-text"></div></h1>
 
             <FadeInSection>

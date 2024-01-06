@@ -7,9 +7,16 @@ import Project from "./components/Project";
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Project /> 
+      <div className="main">
+        <Home />
+        <About />
+        <Project />
+        <div className="footer">
+          <p>Built and designed by Thi Huyen Hoang.</p>
+          <p>All rights reserved. ©</p>
+        </div>
+      </div>
+       
     </div>
   );
 }
