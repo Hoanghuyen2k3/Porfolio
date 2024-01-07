@@ -34,7 +34,7 @@ function Home() {
                 <div className="nav-to">
                     <a href="https://github.com/Hoanghuyen2k3" target="_blank"rel="noopener noreferrer"><img className="git" src={git} alt="github" /></a>
                     <a href="https://www.linkedin.com/in/thi-huyen-hoang-ab434019b/" target="_blank"rel="noopener noreferrer"><img className="git" src={linkedin} alt="linkedin" /></a>
-                    <a href="https://drive.google.com/file/d/1mbExN1exXITOsOrzPrUQ4ObqUQrOKQL9/view?usp=sharing" target="_blank"rel="noopener noreferrer"><img className="git" src={cv} alt="email" /></a>
+                    <a href="https://drive.google.com/file/d/17Q6qyeiCOlMPBDFDLvZHS9sKk7HatG6m/view?usp=sharing" target="_blank"rel="noopener noreferrer"><img className="git" src={cv} alt="email" /></a>
 
                     <a href="mailto:khanhhuyenx20@gmail.com" target="_blank"rel="noopener noreferrer"><img className="git" src={em} alt="email" /></a>
                 </div>
