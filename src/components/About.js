@@ -7,7 +7,7 @@ import { FaLocationArrow } from "react-icons/fa";
 function About() {
     const one = (
         <p>
-         I pride myself on being a smart, dedicated, outgoing, and industrious individual. These qualities fuel my eagerness to learn quickly and stay abreast of the latest technologies shaping the world of engineering. Currently maintaining a Cumulative GPA of +92%, I have garnered scholarships that speak to my unwavering dedication to academic excellence.
+         I pride myself on being a smart, dedicated, outgoing, and industrious individual. These qualities fuel my eagerness to learn quickly and stay abreast of the latest technologies shaping the world of engineering. Currently maintaining a Cumulative GPA of <b>3.7/4.0</b>, I have garnered scholarships that speak to my unwavering dedication to academic excellence.
         </p>
       );
       const two = (
