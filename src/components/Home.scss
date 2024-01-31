@@ -91,7 +91,7 @@
 
     justify-content: center;
     align-items: center;
-    font-size: clamp(28px, 3vw, 40px);
+    font-size: clamp(20px, 3vw, 40px);
     margin: 20px;
     a {
         text-decoration: none;
@@ -110,4 +110,17 @@
     .m:hover {
       background-color: rgb(49, 47, 47);
     }
+  }
+  @media only screen and (max-width: 500px) {
+    .nav-link{
+      
+      a {
+        margin: 10px 10px;
+        padding: 3px 10px;
+      }
+      
+    }
+
+
+    
   }

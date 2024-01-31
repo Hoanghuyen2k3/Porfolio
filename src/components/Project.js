@@ -13,6 +13,15 @@ import vn2 from "../gif/vn2.png"
 import vn3 from "../gif/vn3.png"
 import git from "../gif/git.png"
 import up from "../gif/up.png"
+import mem1 from "../gif/mem1.png"
+import mem2 from "../gif/mem2.png"
+
+import mem3 from "../gif/mem3.png"
+import mem4 from "../gif/mem4.png"
+import mem5 from "../gif/mem5.png"
+import mem6 from "../gif/mem6.png"
+
+
 import "./Project.scss"
 import { FaLocationArrow } from "react-icons/fa";
 import VideoPlayer from './VideoPlayer';
@@ -54,6 +63,7 @@ const projects ={
     },
     Memoritoo: {
         tech: "ReactJS, NodeJS, Redux, JavaScript, CSS, SCSS, HTML, and OpenAI API",
+        img: [mem1, mem2, mem3, mem4, mem5, mem6],
         github: "https://github.com/Hoanghuyen2k3/memoritoo",
         web:"https://hoanghuyen2k3.github.io/memoritoo/",
         video: "https://www.youtube.com/watch?v=kx4aKYlviYs&list=TLGGpn2whVyS2VMwNjAxMjAyNA&t=43s",
@@ -145,6 +155,7 @@ function Project() {
                                             <div className="video">
                                             <VideoPlayer />
                                             </div>
+                                            <img className="img-projects" src={projects[pro].img[imgP]} alt="project" />
                                      </div>:
                                      (pro==="Cloud"?
                                      <div className="video-container">
