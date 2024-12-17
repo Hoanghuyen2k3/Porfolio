@@ -1,0 +1,84 @@
+.experience {
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 0; // Changed from margin: 10px to margin: 10px 0
+
+  .section-title {
+    font-weight: 900;
+    font-size: clamp(28px, 3vw, 40px);
+    display: flex;
+    align-items: baseline;
+    margin-top: 70px;
+
+    .section-icon {
+      margin-right: 10px;
+      color: #d4bc05;
+    }
+
+    .dash {
+      background-color: black;
+      width: 40vw;
+      height: 1.5px;
+      margin-left: 5px;
+
+      @media only screen and (max-width: 1000px) {
+        height: 1px;
+        width: 20vw; // Reduced width for mobile
+      }
+    }
+  }
+  .section-header {
+    width: 60vw;
+  
+    @media only screen and (max-width: 1000px) {
+      width: 85vw;
+    }
+  }
+  .experience-container {
+    margin-top: 30px;
+    width: 60vw; // Added to match About section width
+
+    @media only screen and (max-width: 1000px) {
+      width: 85vw; // Responsive width for mobile
+    }
+  }
+
+  .experience-item {
+    margin-bottom: 40px;
+    
+    .experience-header {
+      h3 {
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin: 0;
+        color: #0f0d0d;
+      }
+
+      .duration {
+        font-style: italic;
+        color: #0f0d0d;
+      }
+    }
+
+    .achievements {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+
+      li {
+        margin-bottom: 15px;
+        line-height: 1.6;
+      }
+    }
+
+    .icon {
+      font-size: clamp(9px, 1vw, 10px);
+      color: aqua;
+      margin-right: 10px;
+    }
+  }
+}

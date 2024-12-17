@@ -1,70 +1,94 @@
 .about {
     display: flex;
     justify-content: space-around;
-    margin: 10px;
-}
-.about-image {
+    margin: 10px 0; // Changed from margin: 10px to margin: 10px 0
+    
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .about-image {
     width: 40vw;
     max-width: 280px;
     margin-top: 90px;
     border-radius: 5px;
-    // height: 400px;
-}
-.section-header {
+  
+    @media only screen and (max-width: 1000px) {
+      width: 85vw;
+      margin-top: 10px;
+    }
+  }
+  
+  .section-header {
     width: 60vw;
-}
-.section-title{
+  
+    @media only screen and (max-width: 1000px) {
+      width: 85vw;
+    }
+  }
+  
+  .section-title {
     font-weight: 900;
     font-size: clamp(28px, 3vw, 40px);
     display: flex;
-    // justify-content: baseline;
-    // justify-content: center;
     align-items: baseline;
     margin-top: 70px;
-    .dash {
-        background-color: black;
-        width: 40vw;
-        height: 1.5px;
-        margin-left: 5px;
+  
+    .section-icon {
+      margin-right: 10px;
+      color: #d4bc05;
     }
-}
-
-/* Add this CSS in your stylesheet */
-.tech-stack {
-    column-count: 2; /* Set the number of columns */
-    column-gap: 20px; /* Set the gap between columns */
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-    margin-left: 30px;
-    margin-bottom: 50px;
+  
+    .dash {
+      background-color: black;
+      width: 40vw;
+      height: 1.5px;
+      margin-left: 5px;
+  
+      @media only screen and (max-width: 1000px) {
+        height: 1px;
+      }
+    }
   }
   
-  .tech-stack li {
-    margin-bottom: 10px; /* Adjust spacing between items if needed */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
-.icon {
+  
+  .skill-category {
+    ul {
+      list-style: none;
+      padding: 0;
+      column-count: 2;
+      column-gap: 20px;
+    }
+  
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .icon {
     font-size: clamp(9px, 1vw, 10px);
     color: aqua;
-}
-
-@media only screen and (max-width: 1000px) {
-    .about {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .about-image, .section-header{
-        width: 85vw;
-    }
-    .about-image {
-        margin-top: 10px;
-        // height: 400px;
-    }
-    .section-title{
-        
-        .dash {
-           
-            height: 1px;
-        }
-    }
-}
+  }
+  
+  .courses-list {
+    column-count: 2;
+    column-gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .personal-intro {
+    margin: 20px 0;
+  }
