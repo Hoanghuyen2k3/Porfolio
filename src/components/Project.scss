@@ -1,36 +1,35 @@
-.pro{
+.pro {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    // width: 100%;
-    // margin: 10px;
+
     ul, li {
         list-style-type: none;
         margin: 10px 15px;
         padding: 0;
     }
 }
+
 .projects {
     display: flex;
-    // margin: 200px auto;
-    // background-color: black;
     border-radius: 5px;
     height: 700px;
     padding: 10px;
-    // align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    // width: 90vw;
-    // justify-content: space-around;
+    box-shadow: 
+        rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+        rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .buttons {
     width: 12vw;
-    // background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
     
-    // margin-left: -100px;
     button {
         border: none;
         cursor: pointer;
@@ -42,56 +41,63 @@
         padding: 10px;
         background-color: transparent;
         border-radius: 5px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        // font-family: 'Playpen Sans', cursive;
+        box-shadow: 
+            rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
-    button:hover{
+
+    button:hover {
         background-color: aliceblue;
     }
+
     button:active {
         border-right: 1px solid black;
     }
     
     .h {
         background-color: rgb(214, 197, 245);
-        
     }
-    
 }    
-
 
 .discriptions {
     width: 42vw;
-    // background-color: antiquewhite;
     margin: 0 20px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: 
+        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
+
 .img-div {
-    // background-color: aliceblue;
     width: 32vw;
     height: 400px;
     display: flex;
     margin: 20px 0;
 }
-.img-projects{
+
+.img-projects {
     width: 32vw;
-    // margin-top: 20px;
     margin: 20px auto;
     max-width: 500px;
     height: 270px;
+    object-fit: cover;
 }
+
 .section {
-    // margin-left: -50px;
     font-weight: 900;
     font-size: clamp(28px, 3vw, 40px);
     display: flex;
-    // justify-content: baseline;
-    // justify-content: center;
     align-items: baseline;
     margin-bottom: 40px;
     margin-top: 80px;
+
+    .section-icon {
+        margin-right: 10px;
+        color: #d4bc05;
+    }
+
     .dash {
         background-color: black;
         width: 40vw;
@@ -103,53 +109,55 @@
 .hightlight {
     background-color: antiquewhite;
 }
+
 .project-link {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     height: 50px;
-    // background-color: aliceblue;
-    
 }
+
 .git {
     width: 5vw;
     max-width: 35px;
     margin: 10px;
     border-radius: 10%;
-    
 }
+
 @media only screen and (max-width: 1000px) {
     .section {
         margin-left: 0px;
-}
+    }
+
     .projects {
         flex-direction: column;
         height: 1250px;
     }
+
     .buttons {
         width: 80vw;
         margin-left: 0px;
         flex-direction: row;
         justify-content: space-between;
         margin: 2px auto;
+
         button {
             width: 20%;
             margin: 5px;
-        }
-        button {
             height: 90px;
         }
-        
     }
+
     .discriptions {
         width: 80vw;
         margin: 30px 0;
-       
     }
+
     .img-div {
         width: 80vw;
     }
-    .img-projects{
+
+    .img-projects {
         width: 80vw;
     }
 }

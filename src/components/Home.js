@@ -28,13 +28,15 @@ function Home() {
                 <div className="nav-link">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
+                    <a href="#experience">Experiences</a>
                     <a href="#proj">Projects</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 
                 <div className="nav-to">
                     <a href="https://github.com/Hoanghuyen2k3" target="_blank"rel="noopener noreferrer"><img className="git" src={git} alt="github" /></a>
                     <a href="https://www.linkedin.com/in/thi-huyen-hoang-ab434019b/" target="_blank"rel="noopener noreferrer"><img className="git" src={linkedin} alt="linkedin" /></a>
-                    <a href="https://drive.google.com/file/d/10oeyP3qn4VeOUNbnJMVZeGinOfUrZ_e1/view?usp=sharing" target="_blank"rel="noopener noreferrer"><img className="git" src={cv} alt="email" /></a>
+                    <a href="https://drive.google.com/file/d/1ioL_g1plNzryY0vp-6nq3LbuRGwa2fDm/view?usp=sharing" target="_blank"rel="noopener noreferrer"><img className="git" src={cv} alt="email" /></a>
 
                     <a href="mailto:khanhhuyenx20@gmail.com" target="_blank"rel="noopener noreferrer"><img className="git" src={em} alt="email" /></a>
                 </div>
@@ -46,7 +48,13 @@ function Home() {
                 <div className="intro-subtitle">I  <img src={love} alt="love" /> creating stuffs.</div>
             
                 <div className="intro-desc">
-                I am a third-year student pursuing a Bachelor of Engineering in Information Systems at Humber College, driven by a relentless passion for learning and growth. As I embark on my journey towards becoming an accomplished engineer, I am actively seeking co-op opportunities ranging from 4 to 16 months, set to commence in Summer 2024.
+                I'm Thi Huyen, a passionate <b>third-year</b> Information Systems Engineering student at Humber Polytechnic with hands-on experience in <b>full-stack development, Android development, and cloud technologies</b>.
+                </div>
+                <div className="intro-desc">
+                Currently, I’m sharpening my skills as a <b>Junior Software Developer</b> at MDMToGO, where I work as a full-stack and Android developer while tackling everything from <b>System design to DevOps</b> in the fast-paced world of <b>startups</b>.
+                </div>
+                <div className="intro-desc">
+                When I’m not coding, you’ll find me exploring innovative tech solutions, learning new tools, and pushing boundaries in the ever-evolving field of engineering.
                 </div>
                 <div className="mail">
                     <div className="m">
