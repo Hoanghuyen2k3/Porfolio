@@ -95,7 +95,7 @@ const projects = {
 };
 
 function Project() {
-    const [selectedProject, setSelectedProject] = useState("HiFive");
+    const [selectedProject, setSelectedProject] = useState("Cloud");
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
