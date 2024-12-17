@@ -1,6 +1,9 @@
 
 
-![image](https://github.com/Hoanghuyen2k3/Porfolio/assets/98433948/ac7ecae9-fc24-4501-82ef-e1658ce4270a)
+![image](https://github.com/user-attachments/assets/fa534b43-d73d-403f-a430-e9b50ffae134)
+
+![image](https://github.com/user-attachments/assets/8ccd9c52-63c7-4990-bed0-41e295848a87)
+
 
 This is my [Portfolio](https://hoanghuyen2k3.github.io/Porfolio/) built with React.js
 
